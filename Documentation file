@@ -1,18 +1,38 @@
+Movie Trivia Quiz Documentation
+
 Introduction:
-Welcome to the Movie Trivia Quiz! This Python program is designed to test your knowledge of movies through a series of trivia questions. Whether you're a casual moviegoer or a die-hard film buff, this quiz has something for everyone. Choose your difficulty level, answer the questions, and see how well you know your favorite movies!
+Welcome to the Movie Trivia Quiz! This Python program allows users to test their knowledge of movies by answering trivia questions. With questions ranging from easy to hard, users can choose their preferred difficulty level and enjoy a challenging quiz experience.
 
-Functionality Overview:
+Functions and Methods:
 
-select_difficulty(): Allows the user to choose a difficulty level for the trivia quiz (easy, medium, hard).
-generate_question(): Generates a random trivia question based on the selected difficulty level.
-evaluate_answer(): Evaluates the user's answer to the current trivia question and provides feedback on correctness.
-Argument Options:
+select_difficulty(): This function prompts the user to choose a difficulty level for the trivia quiz. It takes no arguments and returns a string indicating the selected difficulty level ('easy', 'medium', or 'hard').
 
-select_difficulty(): No arguments required. User selects difficulty level interactively.
-generate_question(): Takes difficulty level as input (easy, medium, hard).
-evaluate_answer(): Takes user's answer as input.
+generate_questions(difficulty): This function generates a list of trivia questions based on the selected difficulty level. It takes a string argument (difficulty) indicating the chosen difficulty level ('easy', 'medium', or 'hard') and returns a list of trivia questions.
+
+evaluate_answer(correct_answer, user_answer): This function evaluates the user's answer to the current trivia question. It takes two string arguments (correct_answer and user_answer) representing the correct answer and the user's answer, respectively. It returns True if the user's answer is correct and False otherwise.
+
 Example Use Cases:
 
-User selects difficulty level "easy" and answers trivia questions about popular movie quotes.
-User selects difficulty level "medium" and answers trivia questions about famous actors and actresses.
-User selects difficulty level "hard" and answers trivia questions about obscure movie facts and trivia.
+Select Difficulty Level:
+difficulty_level = select_difficulty()
+The user is prompted to choose a difficulty level (easy, medium, or hard).
+
+Generate Trivia Questions:
+questions = generate_questions(difficulty_level)
+A list of trivia questions is generated based on the selected difficulty level.
+
+Evaluate User's Answer:
+correct_answer = "Casablanca"
+user_answer = input("Your answer: ")
+if evaluate_answer(correct_answer, user_answer):
+    print("Correct! Well done!")
+else:
+    print("Incorrect. The correct answer is:", correct_answer)
+The user's answer is evaluated, and feedback is provided based on correctness.
+
+Data Structure:
+The program does not require external data files. Trivia questions and their corresponding correct answers are defined within the script itself using Python dictionaries.
+
+Conclusion:
+The Movie Trivia Quiz program offers an entertaining way to test your movie knowledge. With multiple difficulty levels and a diverse range of trivia questions, users can enjoy a challenging quiz experience while learning interesting facts about movies. Get ready to embark on an exciting movie trivia journey!
+
