@@ -1,18 +1,11 @@
-To test the entire functionality of the Movie Trivia Quiz program, you can follow these steps:
+To thoroughly test the functionality of the Movie Trivia Quiz program, follow these steps:
 
 Run the program by executing the Python script file (movie_trivia_quiz.py) in your terminal or command prompt.
-You will be prompted to choose a difficulty level (easy, medium, or hard) for the quiz. Enter a number between 1 and 3 corresponding to your desired difficulty level.
+When prompted, choose a difficulty level for the quiz by entering a number between 1 and 3.
 The program will display a series of trivia questions based on the selected difficulty level.
 For each question, enter your answer in the terminal and press Enter.
+If you answer a question incorrectly, the program will provide a hint to help you.
 After answering all the questions, the program will display your final score.
-If you choose to play again, the program will restart and prompt you to select another difficulty level. If you choose not to play again, the program will terminate.
-Here's an example of how you can test the program:
-
-Run the program by executing python3 movie_trivia_quiz.py.
-Choose difficulty level 1 for an easy quiz.
-Answer the trivia questions.
-Observe the final score and decide whether to play again or not.
-If you choose to play again, select a different difficulty level and repeat steps 3-4.
-Example Data: Example data is provided within the script itself. The trivia questions and their corresponding correct answers are defined in the script. You can use these predefined questions and answers to conduct the test.
-
-By following these steps, you can thoroughly test the functionality of the Movie Trivia Quiz program.
+Decide whether to play again or exit the program.
+If you choose to play again, repeat steps 2-7 with a different difficulty level.
+By following these steps, you can thoroughly test the functionality of the Movie Trivia Quiz program and ensure it operates as expected.
