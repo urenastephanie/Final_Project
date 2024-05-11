@@ -1,14 +1,16 @@
-Project: Movie Trivia Quiz
+Project Description:
+Our project is a movie trivia quiz game implemented in Python. Users can choose from different difficulty levels and answer questions about popular movies. The game provides hints for incorrect answers to help users improve their knowledge.
 
-Description:
-The Movie Trivia Quiz is a Python application that tests users' knowledge of movies through a series of trivia questions. Users can choose a difficulty level (easy, medium, hard) and answer questions related to various movie genres, actors, directors, and film history.
+Function Descriptions:
 
-Functions:
-a. select_difficulty():
-   This function prompts the user to choose a difficulty level for the trivia quiz (easy, medium, hard). The difficulty level determines the complexity of the questions asked during the quiz.
+1. select_difficulty():
+   - This function allows the user to choose a difficulty level for the trivia quiz.
+   
+2. generate_questions(difficulty):
+   - This function generates a list of trivia questions based on the selected difficulty level.
+   
+3. evaluate_answer(correct_answer, user_answer):
+   - This function evaluates the user's answer to the current trivia question and returns True if the answer is correct, otherwise False.
 
-b. generate_question():
-   This function generates a random trivia question based on the selected difficulty level. Questions may cover topics such as movie plots, famous quotes, character names, or film production trivia.
-
-c. evaluate_answer():
-   This function evaluates the user's answer to the current trivia question and provides feedback on whether the answer is correct or incorrect. It keeps track of the user's score throughout the quiz.
+4. provide_hint(question):
+   - This function provides a hint for the current trivia question if the user's answer is incorrect. Hints are designed to guide users towards the correct answer.
