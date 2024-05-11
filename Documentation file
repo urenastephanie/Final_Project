@@ -1,0 +1,18 @@
+Introduction:
+Welcome to the Movie Trivia Quiz! This Python program is designed to test your knowledge of movies through a series of trivia questions. Whether you're a casual moviegoer or a die-hard film buff, this quiz has something for everyone. Choose your difficulty level, answer the questions, and see how well you know your favorite movies!
+
+Functionality Overview:
+
+select_difficulty(): Allows the user to choose a difficulty level for the trivia quiz (easy, medium, hard).
+generate_question(): Generates a random trivia question based on the selected difficulty level.
+evaluate_answer(): Evaluates the user's answer to the current trivia question and provides feedback on correctness.
+Argument Options:
+
+select_difficulty(): No arguments required. User selects difficulty level interactively.
+generate_question(): Takes difficulty level as input (easy, medium, hard).
+evaluate_answer(): Takes user's answer as input.
+Example Use Cases:
+
+User selects difficulty level "easy" and answers trivia questions about popular movie quotes.
+User selects difficulty level "medium" and answers trivia questions about famous actors and actresses.
+User selects difficulty level "hard" and answers trivia questions about obscure movie facts and trivia.
